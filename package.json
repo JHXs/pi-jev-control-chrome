@@ -1,0 +1,28 @@
+{
+  "name": "pi-jev-control-chrome",
+  "version": "0.4.3",
+  "private": true,
+  "description": "Bounded System One (Jev) decision loop over pi-control-chrome's native Pi tools; any classifier provider Pi knows (typesafe by default)",
+  "type": "module",
+  "engines": {
+    "node": "^22 || >=24"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check:js": "node --check src/core.mjs"
+  },
+  "files": [
+    "index.ts",
+    "src",
+    "README.md"
+  ]
+}
